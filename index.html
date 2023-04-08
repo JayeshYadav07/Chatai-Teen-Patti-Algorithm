@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>3 Patti</title>
+
+        <style type="text/css">
+            html,
+            body {
+                background-color: #fafafa;
+                display: flex;
+                justify-content: center;
+            }
+
+            table {
+                border: 2px solid #000000;
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid #000000;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            input {
+                color: #000000;
+                padding: 0;
+                border: 0;
+                text-align: center;
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+                background-color: #ffffff;
+                outline: none;
+            }
+
+            h1 {
+                text-align: center;
+            }
+            #options {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                align-items: center;
+            }
+            button {
+                height: 40px;
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>3 Patti Chatai</h1>
+
+            <table id="grid">
+                <tr>
+                    <td>
+                        <input id="cell-0" type="text" />
+                    </td>
+                    <td>
+                        <input id="cell-1" type="text" />
+                    </td>
+                    <td><input id="cell-2" type="text" /></td>
+
+                    <td><input id="cell-3" type="text" /></td>
+                    <td>
+                        <input id="cell-4" type="text" />
+                    </td>
+                    <td><input id="cell-5" type="text" /></td>
+
+                    <td><input id="cell-6" type="text" /></td>
+                    <td><input id="cell-7" type="text" /></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="cell-8" type="text" />
+                    </td>
+                    <td><input id="cell-9" type="text" /></td>
+                    <td><input id="cell-10" type="text" /></td>
+
+                    <td>
+                        <input id="cell-11" type="text" />
+                    </td>
+                    <td>
+                        <input id="cell-12" type="text" />
+                    </td>
+                    <td>
+                        <input id="cell-13" type="text" />
+                    </td>
+
+                    <td><input id="cell-14" type="text" /></td>
+                    <td><input id="cell-15" type="text" /></td>
+                </tr>
+
+                <tr>
+                    <td><input id="cell-16" type="text" /></td>
+                    <td>
+                        <input id="cell-17" type="text" />
+                    </td>
+                    <td>
+                        <input id="cell-18" type="text" />
+                    </td>
+
+                    <td><input id="cell-19" type="text" /></td>
+                    <td><input id="cell-20" type="text" /></td>
+                    <td><input id="cell-21" type="text" /></td>
+
+                    <td><input id="cell-22" type="text" /></td>
+                    <td>
+                        <input id="cell-23" type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="cell-24" type="text" />
+                    </td>
+                    <td><input id="cell-25" type="text" /></td>
+                    <td><input id="cell-26" type="text" /></td>
+
+                    <td><input id="cell-27" type="text" /></td>
+                    <td>
+                        <input id="cell-28" type="text" />
+                    </td>
+                    <td><input id="cell-29" type="text" /></td>
+
+                    <td><input id="cell-30" type="text" /></td>
+                    <td><input id="cell-31" type="text" /></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="cell-32" type="text" />
+                    </td>
+                    <td><input id="cell-33" type="text" /></td>
+                    <td><input id="cell-34" type="text" /></td>
+
+                    <td>
+                        <input id="cell-35" type="text" />
+                    </td>
+                    <td><input id="cell-36" type="text" /></td>
+                    <td>
+                        <input id="cell-37" type="text" />
+                    </td>
+
+                    <td><input id="cell-38" type="text" /></td>
+                    <td><input id="cell-39" type="text" /></td>
+                </tr>
+            </table>
+            <div id="options">
+                <button onclick="run()">Find</button>
+                <div id="ouput"></div>
+                <table>
+                    <tr>
+                        <td><input id="op-0" type="text" /></td>
+                        <td><input id="op-1" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><input id="op-2" type="text" /></td>
+                        <td><input id="op-3" type="text" /></td>
+                    </tr>
+                </table>
+            </div>
+            <img src="cardType.png" width="250px" alt="" />
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
